@@ -34,43 +34,52 @@ Program to design a half subtractor and full subtractor circuit and verify its t
 Developed by: b.barathraj
 RegisterNumber: 212222230019
 ```
+### HALF_SUBTRACTOR :
 ```
-module half
-_sub(x, y, d, b, x1);
-input x,y;
-output x1, d, b;
-xor(d, x, y);
-not(x1, x);
-and(b, x1, y);
+module Halfsub(A,B,Diff,Borrow);
+input A,B;
+output Diff,Borrow;
+wire x;
+xor (Diff, A,B);
+not(x,A);
+and(Borrow,x,B);
 endmodule
-
-module full_sub(x, y, z, d, b, x1, x2, x3, x4, x5);
-input x,y,z;
-output d, b, x1, x2, x3, x4 ,x5;
-xor(x1, x, y);
-xor(d, x1, z);
-not(x2, x);
-and(x3, x2, y);
-and(x4, x3, z);
-and(x5, y, z);
-or(b, x3, x4, x5);
+```
+### FULL_SUBTRACTOR :
+```
+module FulLsub(A,B,C,Diff,Borrow);
+input A,B,C;
+output Diff,Borrow;
+wire p;
+assign Diff = ((A^B)^C);
+not(p,A);
+assign Borrow = ((p&B)|(p&C)|(B&C));
 endmodule
-
 ```
 ## Output:
 ## Truthtable
+### HALF_SUBTRACTOR :
+![half subractor truth table](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/344cdda0-4a1a-402e-8422-45ca8d09254f)
 
-![exp4 truthtable](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/6ebeada5-980c-4a52-9c06-c807cfe42894)
 
-##  RTL realization
+### FULL_SUBTRACTOR :
+![full subractor truth table](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/85ba8a11-1b97-414a-9f29-55e201b361f8)
 
-![half subractor rtl](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/13ac910b-31d3-4049-adc1-8f94bfc93ee9)
-![Full Subtractor rtl](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/7891dbc6-587c-413a-ae31-7cd1ac20af8d)
+
+### RTL realization
+### HALF_SUBTRACTOR :
+![half subractor rtl](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/f685c986-9d4b-4f56-ac3f-6bb881d4f553)
+
+### FULL_SUBTRACTOR :
+![Full Subtractor rtl](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/e3cab05c-bd3a-4939-a3ad-207728c310a0)
+
 
 ## Timing diagram 
+### HALF_SUBTRACTOR :
+![half subractor time diagram](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/8a0f795d-44e1-42be-ab9a-0e01ad53e6ab)
+### FULL_SUBTRACTOR :
+![full subtractor time diagram ](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/ccab14c4-2e71-4dc6-ac61-ef4615603e11)
 
-![half subractor time diagram](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/3b2c1738-ecee-43f2-9bcd-80562ce81cff)
-![full subtractor time diagram ](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/967ea0b3-a1a6-42df-a60f-3d97d045fc8c)
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
