@@ -59,26 +59,30 @@ endmodule
 ## Output:
 ## Truthtable
 ### HALF_SUBTRACTOR :
-![half subractor truth table](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/344cdda0-4a1a-402e-8422-45ca8d09254f)
+
+![truth table exp 3 1](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/5ef2dfe3-562c-4b33-8425-c5e1586ba0a5)
 
 
 ### FULL_SUBTRACTOR :
-![full subractor truth table](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/85ba8a11-1b97-414a-9f29-55e201b361f8)
+![truth table ex 4 2](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/1f23f4f4-3d2d-4541-83fb-7ae1f7608f44)
 
 
 ### RTL realization
-### HALF_SUBTRACTOR :
-![half subractor rtl](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/f685c986-9d4b-4f56-ac3f-6bb881d4f553)
+### HALF_SUBTRACTOR
+![rtl ex 4 1](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/7e3590b2-faf9-4283-ab44-c16ad0e32196)
+ :
 
 ### FULL_SUBTRACTOR :
-![Full Subtractor rtl](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/e3cab05c-bd3a-4939-a3ad-207728c310a0)
+![rtl ex 4 2](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/f4b84447-90a4-4f20-88f4-8195cedf373f)
 
 
 ## Timing diagram 
 ### HALF_SUBTRACTOR :
-![half subractor time diagram](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/8a0f795d-44e1-42be-ab9a-0e01ad53e6ab)
+![time diagram ex 4 1](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/3ce21cb8-7b87-4316-92d5-80433f574f11)
+
+
 ### FULL_SUBTRACTOR :
-![full subtractor time diagram ](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/ccab14c4-2e71-4dc6-ac61-ef4615603e11)
+![time diAGRAM ex 4 2](https://github.com/bharathraj1905/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/121490575/2a0ff24e-d346-4938-942d-df907b8b43b5)
 
 
 ## Result:
